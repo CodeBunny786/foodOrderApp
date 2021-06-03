@@ -142,14 +142,21 @@ export default class Main extends Component {
              <View style={styles.VerticalViewDescription}> 
              <View style={styles.horizontalAddMinus}> 
              <TouchableOpacity onPress={()=>this.onItemRemove()}>
-             <Text style={styles.addButton}> - </Text>
+             <View style={styles.roundView}>
+             <Text style={styles.minusButton}> - </Text>
+             </View>
              </TouchableOpacity>
-  
-             <Text> {this.state.quantity} </Text>
-             <TouchableOpacity onPress={()=>this.onItemAdd()}>
-             <Text style={styles.minusButton}> +</Text>
-             </TouchableOpacity>
+
+             <Text style={styles.quantity}> {this.state.quantity >9  ? this.state.quantity :'0' + this.state.quantity} </Text>
+         
+               {/* <View style={styles.roundView}> */}
+               <TouchableOpacity  style={styles.roundView} onPress={()=>this.onItemAdd()}>
+               <Text t style={styles.addButton}> +</Text>
+               </TouchableOpacity>
  
+                 {/* </View> */}
+         
+        
              </View>
             
              </View>

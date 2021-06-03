@@ -5,12 +5,8 @@ export default StyleSheet.create({
   ...ApplicationStyles.screen,
   container: {
     flex: 1,
-    backgroundColor: '#b6bbb7'
-
   },
   linearGradient: {
-
-
   },
 
   backImage: {
@@ -158,8 +154,6 @@ marginTop:10,
   },
   price:{
     fontSize: 16
-
-
   },
   descriptionText:{
 
@@ -178,33 +172,40 @@ marginTop:10,
 
     height:30,
     width:30,
-    borderRadius:15,
-    color:'#333',
-    // backgroundColor:'black',
-    justifyContent:'center',
-    alignItems:'center',
-    textAlign:'center',
+    color:'#fff',
     alignSelf:'center',
-    borderWidth: 1,
-    textAlign:'center',
-    borderColor: '#333',
-    textAlignVertical: "center"
+    marginTop:10,
+    paddingHorizontal:7
+
   },
   minusButton:{
 
     height:30,
     width:30,
-    borderWidth: 1,
-    borderColor: '#333',
-    borderRadius:15,
-    color:'#333',
-    textAlign:'center',
-    // backgroundColor:'black',
-    justifyContent:'center',
-    alignItems:'center',
+    color:'#fff',
     alignSelf:'center',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop:10,
+    paddingHorizontal:10
+    // textAlign:'center',
+  },
+  roundView:{
+
+    width: 30,
+    height:30,
+    borderRadius: 30/2,
+    backgroundColor:'black',
+    justifyContent:'center',
     textAlign:'center',
-    textAlignVertical: "center"
+    alignItems:'center',
+    justifyContent: 'center',
+    alignItems: 'center'
+
+  },
+  quantity:{
+
+    marginTop:7,paddingHorizontal:7
   }
 
 });

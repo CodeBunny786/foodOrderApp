@@ -108,7 +108,7 @@
          options={{
            tabBarLabel: 'Home',
            tabBarIcon: ({ color, size }) => (
-             <Image style={styles.imagesStyle} source={Images.ic_menu}></Image>
+             <Image style={styles.imagesStyle} source={Images.ic_home}></Image>
            ),
          }}
        />
@@ -118,7 +118,7 @@
          options={{
            tabBarLabel: 'Updates',
            tabBarIcon: ({ color, size }) => (
-             <Image style={styles.imagesStyle} source={Images.icUsers}></Image>
+             <Image style={styles.imagesStyle} source={Images.ic_profile}></Image>
            ),
          }}
        />
