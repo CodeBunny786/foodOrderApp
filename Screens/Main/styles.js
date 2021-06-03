@@ -94,7 +94,17 @@ export default StyleSheet.create({
     borderRadius: 12,
     borderWidth: 1,
     height: 30,
-    width: 100
+    width: 100,
+    shadowColor: "#000",
+shadowOffset: {
+	width: 0,
+	height: 6,
+},
+shadowOpacity: 0.39,
+shadowRadius: 8.30,
+
+elevation: 13,
+
 
   },
   image: {
@@ -154,7 +164,47 @@ marginTop:10,
   descriptionText:{
 
     marginHorizontal:30,
-    marginTop:  0
+    marginTop:  0,
+    color:'#333',
+    textAlign:'center'
+  },
+  imagesStyle:{
+
+    height:30,
+    width:30,
+    tintColor:'white'
+  },
+  addButton:{
+
+    height:30,
+    width:30,
+    borderRadius:15,
+    color:'#333',
+    // backgroundColor:'black',
+    justifyContent:'center',
+    alignItems:'center',
+    textAlign:'center',
+    alignSelf:'center',
+    borderWidth: 1,
+    textAlign:'center',
+    borderColor: '#333',
+    textAlignVertical: "center"
+  },
+  minusButton:{
+
+    height:30,
+    width:30,
+    borderWidth: 1,
+    borderColor: '#333',
+    borderRadius:15,
+    color:'#333',
+    textAlign:'center',
+    // backgroundColor:'black',
+    justifyContent:'center',
+    alignItems:'center',
+    alignSelf:'center',
+    textAlign:'center',
+    textAlignVertical: "center"
   }
 
 });

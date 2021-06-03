@@ -78,7 +78,7 @@ export default class Main extends Component {
        
        style={{
         width:'100%',
-        height:'99%',
+        height:'199%',
         alignSelf:'center',
         borderRadius:20,
         borderWidth:.1
@@ -97,13 +97,13 @@ export default class Main extends Component {
              </View>
 
             <Text style={styles.mainTitle}>TAKE YOUR HEALTHY FOOD</Text>
-            <Text style={styles.secondaryTitle}>categories</Text>
+            <Text style={styles.secondaryTitle}>Categories</Text>
 
             <View style={{height:null,marginTop:10}}> 
             <FlatList
               data={DATA}
               showsHorizontalScrollIndicator={false}
-              style={{ maxHeight: 50,marginLeft:20 }}
+              style={{ height: 80,marginLeft:20 }}
               horizontal={true}
               renderItem={({ item }) => <View style={[this.state.selectedTabItem.id === item.id ? styles.horizontalCardContainerSelected : styles.horizontalCardContainer]}>
                 
@@ -130,24 +130,24 @@ export default class Main extends Component {
              <Text> $0.5</Text>
              </View>
              <View style={styles.VerticalViewTime}> 
-             <Text>size</Text>
-             <Text>Medium</Text>
+             <Text>shipping feee</Text>
+             <Text>2.5 km</Text>
              <Text> $0.5</Text>
              </View>
              <View style={styles.VerticalViewQuantity}> 
-             <Text>size</Text>
-             <Text>Medium</Text>
-             <Text> $0.5</Text>
+             <Text>Delivery in</Text>
+             <Text>10 min</Text>
+             <Text> motorbike</Text>
              </View>
              <View style={styles.VerticalViewDescription}> 
              <View style={styles.horizontalAddMinus}> 
              <TouchableOpacity onPress={()=>this.onItemRemove()}>
-             <Text> - </Text>
+             <Text style={styles.addButton}> - </Text>
              </TouchableOpacity>
   
              <Text> {this.state.quantity} </Text>
              <TouchableOpacity onPress={()=>this.onItemAdd()}>
-             <Text> +</Text>
+             <Text style={styles.minusButton}> +</Text>
              </TouchableOpacity>
  
              </View>
