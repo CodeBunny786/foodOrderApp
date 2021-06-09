@@ -1,8 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { Metrics, ApplicationStyles, scale, Colors, Fonts } from '../../Themes/';
-
 export default StyleSheet.create({
-  ...ApplicationStyles.screen,
   container: {
     flex: 1,
   },
@@ -25,14 +22,12 @@ export default StyleSheet.create({
   },
 
   headerItems: {
-
     flexDirection: 'row',
     paddingHorizontal: 30,
     justifyContent: 'space-between',
     alignItems: 'center'
   },
   menuIcon: {
-
     height: 35,
     width: 35
   },
@@ -46,10 +41,8 @@ export default StyleSheet.create({
     paddingHorizontal: 30,
     textAlign: 'left',
     marginTop: 30
-
   },
   secondaryTitle: {
-
     fontSize: 25,
     fontWeight: 'normal',
     paddingHorizontal: 30,
@@ -58,15 +51,12 @@ export default StyleSheet.create({
   },
   topListText: {
     alignItems: 'center'
-
   },
   topListTextSelected: {
-
     alignItems: 'center',
     color: '#fff'
   },
   horizontalCardContainer: {
-
     marginHorizontal: 10,
     paddingHorizontal: 0,
     alignItems: 'center',
@@ -79,10 +69,8 @@ export default StyleSheet.create({
 
   },
   horizontalCardContainerSelected: {
-
     marginHorizontal: 10,
     paddingHorizontal: 0,
-
     alignItems: 'center',
     textAlign: 'center',
     justifyContent: 'center',
@@ -98,13 +86,9 @@ export default StyleSheet.create({
     },
     shadowOpacity: 0.39,
     shadowRadius: 8.30,
-
     elevation: 13,
-
-
   },
   image: {
-
     marginTop: -100,
     height: 500,
     width: '130%',
@@ -116,12 +100,9 @@ export default StyleSheet.create({
     },
     shadowOpacity: 0.39,
     shadowRadius: 8.30,
-
     elevation: 13,
-
   },
   VerticalViewSize: {
-
     marginHorizontal: 30,
     marginTop: 10,
   },
@@ -135,37 +116,30 @@ export default StyleSheet.create({
     marginHorizontal: 30,
   },
   VerticalViewQuantity: {
-
     marginHorizontal: 30,
     marginTop: 10,
   },
   VerticalViewFee: {
-
     marginHorizontal: 30,
     marginTop: 10,
   },
 
   horizontalAddMinus: {
-
     flexDirection: 'row',
     marginTop: 10,
     marginHorizontal: 30
   },
   sizeTitle: {
     fontSize: 16,
-
-
   },
   sizeType: {
     fontSize: 22,
     fontWeight: 'bold'
-
   },
   price: {
     fontSize: 16
   },
   descriptionText: {
-
     marginHorizontal: 30,
     marginTop: 0,
     color: '#333',
@@ -178,17 +152,14 @@ export default StyleSheet.create({
     tintColor: 'white'
   },
   addButton: {
-
     height: 30,
     width: 30,
     color: '#fff',
     alignSelf: 'center',
     marginTop: 10,
     paddingHorizontal: 7
-
   },
   minusButton: {
-
     height: 30,
     width: 30,
     color: '#fff',
@@ -197,10 +168,8 @@ export default StyleSheet.create({
     alignItems: 'center',
     marginTop: 10,
     paddingHorizontal: 10
-    // textAlign:'center',
   },
   roundView: {
-
     width: 30,
     height: 30,
     borderRadius: 30 / 2,
@@ -210,10 +179,8 @@ export default StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     alignItems: 'center'
-
   },
   quantity: {
-
     marginTop: 7, paddingHorizontal: 7
   }
 

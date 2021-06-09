@@ -1,8 +1,5 @@
-import 'react-native-get-random-values';
 import React, {Component} from 'react';
 import {View,Alert,Text, Image,SafeAreaView,FlatList, TouchableOpacity} from 'react-native';
-// Styles
-import {BlurView} from '@react-native-community/blur';
 import styles from './styles';
 import { Images } from '../../Themes';
 const DATA = [
@@ -66,18 +63,7 @@ export default class Main extends Component {
   render() {
     return (
       <View style={styles.container}>
-     <BlurView
-       
-       style={{
-        width:'100%',
-        height:'199%',
-        alignSelf:'center',
-        borderRadius:20,
-        borderWidth:.1
-       }}
-       blurType="light"
-       blurAmount={8}
-       >
+  
          <SafeAreaView>
            <View style={styles.headerItems}>
              <Image style={styles.menuIcon} resizeMode="contain" source={Images.ic_menu} ></Image>
@@ -117,16 +103,19 @@ export default class Main extends Component {
              <Text>Medium</Text>
              <Text> $0.5</Text>
              </View>
+
              <View style={styles.VerticalViewTime}> 
              <Text>shipping feee</Text>
              <Text>2.5 km</Text>
              <Text> $0.5</Text>
              </View>
+
              <View style={styles.VerticalViewQuantity}> 
              <Text>Delivery in</Text>
              <Text>10 min</Text>
              <Text> motorbike</Text>
              </View>
+
              <View style={styles.VerticalViewDescription}> 
              <View style={styles.horizontalAddMinus}> 
              <TouchableOpacity onPress={()=>this.onItemRemove()}>
@@ -138,7 +127,7 @@ export default class Main extends Component {
              <Text style={styles.quantity}> {this.state.quantity >9  ? this.state.quantity :'0' + this.state.quantity} </Text>
         
                <TouchableOpacity  style={styles.roundView} onPress={()=>this.onItemAdd()}>
-               <Text t style={styles.addButton}> +</Text>
+               <Text style={styles.addButton}> +</Text>
                </TouchableOpacity>        
              </View>
             
@@ -150,11 +139,11 @@ export default class Main extends Component {
             <Image resizeMode='contain' style={styles.image} source={Images.ic_plate}></Image>
             </View>
             </View>
-            <Text style={styles.descriptionText}> + sjsjn kss ks sks ks sks sksm sks sksms ks sskomss ssmks kss ksnsknsk nsks nsks ksnksnksn </Text>
+            <Text style={styles.descriptionText}> Fastest  delivery all across the country 
+            30 min give us a call for more discounts and custom orders  </Text>
             <View style={styles.bottomContainer}>
-        </View>
 
-    </BlurView>
+        </View>
     </View>
     );
   }
