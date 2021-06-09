@@ -31,7 +31,7 @@ export default class DeatilsScreen extends Component {
 
   setTimePassed = () => {
 
-    this.props.navigation.replace('Main');
+    // this.props.navigation.naviagte('Main');
   };
   onBackPress = () => {};
   openLink = (link) => {

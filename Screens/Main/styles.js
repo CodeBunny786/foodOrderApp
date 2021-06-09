@@ -92,120 +92,129 @@ export default StyleSheet.create({
     height: 30,
     width: 100,
     shadowColor: "#000",
-shadowOffset: {
-	width: 0,
-	height: 6,
-},
-shadowOpacity: 0.39,
-shadowRadius: 8.30,
+    shadowOffset: {
+      width: 0,
+      height: 6,
+    },
+    shadowOpacity: 0.39,
+    shadowRadius: 8.30,
 
-elevation: 13,
+    elevation: 13,
 
 
   },
   image: {
 
-marginTop:-100,
+    marginTop: -100,
     height: 500,
     width: '130%',
-    marginHorizontal: 40
+    marginHorizontal: 20,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 6,
+    },
+    shadowOpacity: 0.39,
+    shadowRadius: 8.30,
+
+    elevation: 13,
 
   },
   VerticalViewSize: {
 
     marginHorizontal: 30,
-    marginTop:10,
+    marginTop: 10,
   },
   VerticalViewFee: {
 
     marginHorizontal: 30,
-    marginTop:10,
+    marginTop: 10,
   },
   VerticalViewTime: {
-marginTop:10,
+    marginTop: 10,
     marginHorizontal: 30,
   },
   VerticalViewQuantity: {
 
     marginHorizontal: 30,
-    marginTop:10,
+    marginTop: 10,
   },
   VerticalViewFee: {
 
     marginHorizontal: 30,
-    marginTop:10,
+    marginTop: 10,
   },
 
   horizontalAddMinus: {
 
     flexDirection: 'row',
-    marginTop:10,
-    marginHorizontal:30
+    marginTop: 10,
+    marginHorizontal: 30
   },
   sizeTitle: {
     fontSize: 16,
-   
+
 
   },
   sizeType: {
     fontSize: 22,
-    fontWeight:'bold'
+    fontWeight: 'bold'
 
   },
-  price:{
+  price: {
     fontSize: 16
   },
-  descriptionText:{
+  descriptionText: {
 
-    marginHorizontal:30,
-    marginTop:  0,
-    color:'#333',
-    textAlign:'center'
+    marginHorizontal: 30,
+    marginTop: 0,
+    color: '#333',
+    textAlign: 'center'
   },
-  imagesStyle:{
+  imagesStyle: {
 
-    height:30,
-    width:30,
-    tintColor:'white'
+    height: 30,
+    width: 30,
+    tintColor: 'white'
   },
-  addButton:{
+  addButton: {
 
-    height:30,
-    width:30,
-    color:'#fff',
-    alignSelf:'center',
-    marginTop:10,
-    paddingHorizontal:7
+    height: 30,
+    width: 30,
+    color: '#fff',
+    alignSelf: 'center',
+    marginTop: 10,
+    paddingHorizontal: 7
 
   },
-  minusButton:{
+  minusButton: {
 
-    height:30,
-    width:30,
-    color:'#fff',
-    alignSelf:'center',
+    height: 30,
+    width: 30,
+    color: '#fff',
+    alignSelf: 'center',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop:10,
-    paddingHorizontal:10
+    marginTop: 10,
+    paddingHorizontal: 10
     // textAlign:'center',
   },
-  roundView:{
+  roundView: {
 
     width: 30,
-    height:30,
-    borderRadius: 30/2,
-    backgroundColor:'black',
-    justifyContent:'center',
-    textAlign:'center',
-    alignItems:'center',
+    height: 30,
+    borderRadius: 30 / 2,
+    backgroundColor: 'black',
+    justifyContent: 'center',
+    textAlign: 'center',
+    alignItems: 'center',
     justifyContent: 'center',
     alignItems: 'center'
 
   },
-  quantity:{
+  quantity: {
 
-    marginTop:7,paddingHorizontal:7
+    marginTop: 7, paddingHorizontal: 7
   }
 
 });

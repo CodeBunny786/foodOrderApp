@@ -1,19 +1,14 @@
 import 'react-native-get-random-values';
 import React, {Component} from 'react';
-import {View,Button, Alert,Text,TouchableHighlight, Image,SafeAreaView,FlatList, TouchableOpacity} from 'react-native';
-// import BottomNavigator from '../../Components/BottomTabbar';
+import {View,Alert,Text, Image,SafeAreaView,FlatList, TouchableOpacity} from 'react-native';
 // Styles
 import {BlurView} from '@react-native-community/blur';
-// import LinearGradient from 'react-native-linear-gradient';
-import LinearGradient from 'react-native-linear-gradient'
 import styles from './styles';
 import { Images } from '../../Themes';
-import data from '../../Data/data'
 const DATA = [
-  { key: 'Headline',id:'1' }, { key: 'Official',id:'2'  }, { key: 'FIFA',id:'3' },
-  { key: 'TopNews',id:'4' }
+  { key: 'Pizza',id:'1' }, { key: 'Home Made',id:'2'  }, { key: 'Fast Food',id:'3' },
+  { key: 'Hot',id:'4' }
 ]
-// import {WebView} from 'react-native-webview';
 export default class Main extends Component {
   static navigationOptions = ({navigation}) => {
     return {
@@ -25,11 +20,8 @@ export default class Main extends Component {
   state = {
     selectedTabIndex: 0,
     items: '',
-    selectedTabItem:-1,
-    
+    selectedTabItem:DATA[0],
     quantity:0
-
-    // link: 'https://app.nexdup.com',
   };
 
   componentDidMount() {}
@@ -40,7 +32,7 @@ export default class Main extends Component {
     Alert.alert(link);
   };
   onItemPress=(key)=>{
-  
+
     this.setState({selectedTabItem:key})
 
   }
@@ -82,15 +74,11 @@ export default class Main extends Component {
         alignSelf:'center',
         borderRadius:20,
         borderWidth:.1
-
        }}
        blurType="light"
        blurAmount={8}
        >
-
          <SafeAreaView>
-
-
            <View style={styles.headerItems}>
              <Image style={styles.menuIcon} resizeMode="contain" source={Images.ic_menu} ></Image>
              <Image style={styles.notificationIcon} resizeMode="contain"  x source={Images.ic_notification} ></Image>
@@ -148,15 +136,10 @@ export default class Main extends Component {
              </TouchableOpacity>
 
              <Text style={styles.quantity}> {this.state.quantity >9  ? this.state.quantity :'0' + this.state.quantity} </Text>
-         
-               {/* <View style={styles.roundView}> */}
+        
                <TouchableOpacity  style={styles.roundView} onPress={()=>this.onItemAdd()}>
                <Text t style={styles.addButton}> +</Text>
-               </TouchableOpacity>
- 
-                 {/* </View> */}
-         
-        
+               </TouchableOpacity>        
              </View>
             
              </View>
@@ -164,15 +147,11 @@ export default class Main extends Component {
             </View>
             
             <View  style={{flex:1,width:'50%',height:400  }}>
-        <Image resizeMode='contain' style={styles.image} source={Images.ic_plate}></Image>
+            <Image resizeMode='contain' style={styles.image} source={Images.ic_plate}></Image>
             </View>
             </View>
             <Text style={styles.descriptionText}> + sjsjn kss ks sks ks sks sksm sks sksms ks sskomss ssmks kss ksnsknsk nsks nsks ksnksnksn </Text>
-        <View style={styles.bottomContainer}>
-          {/* <BottomNavigator
-            moveToScreen={this._moveToScreen}
-            selected={this.state.selectedTabIndex}
-          /> */}
+            <View style={styles.bottomContainer}>
         </View>
 
     </BlurView>
